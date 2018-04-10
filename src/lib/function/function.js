@@ -91,7 +91,7 @@ function sample7() {
         console.log(a + b);
     })(1, 2);
 
-    
+
     // 書き方2(引数なしなら)
     {
         let a = 1;
