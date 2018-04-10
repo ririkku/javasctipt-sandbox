@@ -8,6 +8,8 @@ window.onload = function () {
     sample3();
     sample4();
     sample5();
+    sample6();
+    sample7();
 };
 
 function sample1() {
@@ -69,3 +71,31 @@ function sample5() {
 }
 
 
+/**
+ * 即時関数
+ */
+// ECMAScript6以前
+function sample6() {
+    (function () {
+        var a = 1;
+        var b = 2;
+        console.log(a + b);
+    })();
+}
+
+// ECMAScript6以降
+function sample7() {
+
+    // 書き方1(引数ありの書き方)
+    ((a, b) => {
+        console.log(a + b);
+    })(1, 2);
+
+    
+    // 書き方2(引数なしなら)
+    {
+        let a = 1;
+        let b = 2;
+        console.log(a + b);
+    }
+}
