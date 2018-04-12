@@ -20,3 +20,21 @@ dog.info();
 
 let cat = new Animal('Cat', 2, 2);
 cat.info();
+
+
+class Human extends Animal {
+
+
+    constructor(name, hand, foot, age) {
+        super(name, hand, foot);
+        this.age = age;
+    }
+
+    info2() {
+        this.info();
+        console.log(this.age);
+    }
+}
+
+let human = new Human('Kikukawa', 2, 2, 23);
+human.info2();
