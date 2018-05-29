@@ -4,6 +4,7 @@ let age = '23';
 let str = `わたしの名前は${name}です。${age}歳です。`;
 console.log(str);
 
+
 // テンプレート文字列
 // バッククォートでくくる
 // 改行がそのまま。
@@ -14,7 +15,7 @@ console.log(str2);
 
 
 // タグ付きテンプレートとかいうやつ
-function tag(a, b, c, d){
+function tag(a, b, c, d) {
     // 一つ目の引数に、通常文字列が配列で代入されている。
     console.log(a);
 
@@ -35,4 +36,15 @@ console.log(n2);
 [n1, n2] = [n2, n1]; // 入れ替えも一行でできるようになってしまって。。。
 console.log(n1);
 console.log(n2);
+
+
+// 分割代入を使用して、関数の戻り値を複数にできるようだ
+function fruits() {
+    return ['apple', 'orange'];
+}
+
+let [fruit1, fruit2] = fruits();
+console.log(fruit1);
+console.log(fruit2);
+
 
