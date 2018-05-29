@@ -48,3 +48,13 @@ console.log(fruit1);
 console.log(fruit2);
 
 
+// ...演算足とかあるらしい。　
+let [x, y, ...likeFruits] = ['きくかわ', 23, 'りんご', 'オレンジ']; // 代入してみる
+console.log(x, y, likeFruits);
+
+let array = [1, 4, 5];
+console.log(array);
+console.log(...array); // 展開もできる
+
+let max = Math.max(...array);
+console.log(max);
